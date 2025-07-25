@@ -1504,11 +1504,11 @@ class EnhancedGOOGAnalyzer:
         print("⚠️ High valuation relative to peers")
         
         # Mark's enhanced perspective
-        print(f"\n🎯 MARK'S ENHANCED STRATEGY PERSPECTIVE")
+        print(f"\n🎯 ENHANCED STRATEGY PERSPECTIVE")
         print("-" * 50)
         if conviction_score >= 70:
-            print("🚀 EXCEEDS Mark's high conviction threshold - RARE OPPORTUNITY")
-            print("✅ CEO passes all of Mark's key criteria")
+            print("🚀 EXCEEDS high conviction threshold - RARE OPPORTUNITY")
+            print("✅ CEO passes all of key criteria")
             if breakdown['valuation']['score'] >= 18:
                 print("✅ Exceptional valuation support")
             if breakdown['growth']['score'] >= 15:
@@ -1516,14 +1516,14 @@ class EnhancedGOOGAnalyzer:
             if breakdown['management']['score'] >= 20:
                 print("✅ Management quality excellent")
         elif conviction_score >= 60:
-            print("✅ Meets Mark's conviction threshold for significant position")
-            print("✅ CEO background aligns with Mark's preferences")
+            print("✅ Meets conviction threshold for significant position")
+            print("✅ CEO background aligns with preferences")
             if breakdown['valuation']['score'] >= 15:
                 print("✅ Valuation support present")
             if breakdown['growth']['score'] >= 15:
                 print("✅ Growth profile attractive")
         else:
-            print("⚠️  Does not meet Mark's high conviction threshold")
+            print("⚠️  Does not meet high conviction threshold")
             if breakdown['growth']['score'] < 12:
                 print("❌ Growth concerns limit conviction")
             if breakdown['consensus']['score'] < 12:
@@ -1574,9 +1574,9 @@ if __name__ == "__main__":
     
     # Initialize enhanced Google analyzer
     enhanced_analyzer = EnhancedGOOGAnalyzer(
-        fmp_key="GLZuoqJuFS8Fl2useKyqrW6kxs19UZYu",
-        alpha_vantage_key="Q85JXGGDTSIUAQPF", 
-        fred_key="3e6e514bc9b1774e604ba57618841fdd"
+        fmp_key="API",
+        alpha_vantage_key="API", 
+        fred_key="API"
     )
     
     # Run complete enhanced analysis
